@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4 {
+    letter-spacing: 1px;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-family: "PT Mono", monospace;
+}
+h1 {
+    font-size: 2rem;
+    margin-left: -1px;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1rem;
+}
+h4 {
+    font-size: 0.8rem;
+    color: #969696;
+}
+h4, p, .active, .view-none, .view-all {
+    font-family: "Overpass", sans-serif;
+}
+p {
+    font-size: 1.3em;
+    margin: 4px 0 20px 0;
+}
+a {
+    text-decoration: none;
+}
+#filter-container {
+    bottom: 0;
+    position: fixed;
+    padding: 30px 50px 15px 50px;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 10px;
+}
+#map {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.active, .view-none, .view-all {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0 10px 15px 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.active {
+    background: #767ea1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #767ea1, #62a4ae); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #767ea1, #62a4ae); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #767ea1, #62a4ae); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #767ea1, #62a4ae); /* Standard syntax */
+}
+.active:hover {
+    background: #5cb5a4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #5cb5a4, #9bcc9a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #5cb5a4, #9bcc9a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #5cb5a4, #9bcc9a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #5cb5a4, #9bcc9a); /* Standard syntax */
+}
+.inactive {
+    font-family: "Overpass", sans-serif;
+    background: #969696;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0 10px 15px 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.view-all, .view-none {
+    background: #C3707C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #C3707C, #EF996B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #C3707C, #EF996B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #C3707C, #EF996B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #C3707C, #EF996B); /* Standard syntax */
+}
+.view-all:hover, .view-none:hover {
+    background: #F1BF7A; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #F1BF7A, #ED986C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #F1BF7A, #ED986C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #F1BF7A, #ED986C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #F1BF7A, #ED986C); /* Standard syntax */
+}
+.mapboxgl-ctrl-attrib a, a.mapboxgl-ctrl-logo {
+    background: transparent;
+}
+.mapboxgl-popup-content {
+    width: 425px;
+    height: 250px;
+    overflow: scroll;
+    padding: 28px 25px;
+}
+#main-logo {
+    width: 300px;
+}
+.logo-link {
+    background: transparent;
+    display: inline-block;
+    padding: 15px;
+    margin: 0;
+}
+.location {
+    margin-top: 5px;
+}
+.social-icon {
+    width: 30px;
+    margin-left: 3px;
+}
+.social-icon:hover {
+    filter: brightness(90%);
+}
+.social-container {
+    margin: 2px 0 15px -4px;
+}
+.website {
+    font-family: "PT Mono", monospace;
+    font-size: 1.4em;
+    color: #fff;
+}
+.website-contain {
+    border-radius: 3px;
+    width: 110px;
+    height: 18px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    background: #767ea1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #767ea1, #62a4ae); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #767ea1, #62a4ae); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #767ea1, #62a4ae); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #767ea1, #62a4ae); /* Standard syntax */
+}
+.website-contain:hover {
+    background: #5cb5a4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #5cb5a4, #9bcc9a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #5cb5a4, #9bcc9a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #5cb5a4, #9bcc9a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #5cb5a4, #9bcc9a); /* Standard syntax */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 750px) {
+    #filter-container {
+      height: 20%;
+      overflow: scroll;
+      padding: 22px 10px 10px 10px;
+    }
+    .mapboxgl-popup-content {
+      width: 80vw;
+    }
+    h1, h2, h3, h4 {
+      line-height: 1.0;
+    }
+}
