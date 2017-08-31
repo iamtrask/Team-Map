@@ -49,8 +49,8 @@ noneLink.textContent = 'View None';
 noneLink.onclick = function(e) {
     toggleableLayerIds.forEach(function(id) {
         map.setLayoutProperty(id, 'visibility', 'none');
-        if ($('a').is(".active")) {
-            $('a').addClass("inactive");
+        if ($('#filter-container a').is(".active")) {
+            $('#filter-container a').addClass("inactive");
         }
     });
 };
@@ -64,9 +64,9 @@ allLink.textContent = 'View All';
 allLink.onclick = function(e) {
     toggleableLayerIds.forEach(function(id) {
         map.setLayoutProperty(id, 'visibility', 'visible');
-        if ($('a').is(".inactive")) {
-            $('a').removeClass("inactive");
-            $('a').addClass("active");
+        if ($('#filter-container a').is(".inactive")) {
+            $('#filter-container a').removeClass("inactive");
+            $('#filter-container a').addClass("active");
         }
     });
 };

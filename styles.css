@@ -36,12 +36,13 @@ a {
 #filter-container {
     bottom: 0;
     position: fixed;
+    z-index: 1;
     padding: 30px 50px 15px 50px;
     background-color: rgba(255, 255, 255, 0.75);
     margin: 10px;
 }
 #map {
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -102,14 +103,24 @@ a {
     overflow: scroll;
     padding: 28px 25px;
 }
+.mapboxgl-popup-close-button {
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  padding: 0px;
+}
 #main-logo {
-    width: 300px;
+    width: 200px;
 }
 .logo-link {
     background: transparent;
     display: inline-block;
     padding: 15px;
     margin: 0;
+    position: fixed;
+    z-index: 1;
 }
 .location {
     margin-top: 5px;
