@@ -5,6 +5,7 @@ body {
 h1, h2, h3, h4 {
     letter-spacing: 1px;
     margin: 0;
+    line-height: 1.0;
 }
 h1, h2, h3 {
     font-family: "PT Mono", monospace;
@@ -28,7 +29,7 @@ h4, p, .active, .view-none, .view-all {
 }
 p {
     font-size: 1.3em;
-    margin: 4px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 a {
     text-decoration: none;
@@ -122,9 +123,6 @@ a {
     position: fixed;
     z-index: 1;
 }
-.location {
-    margin-top: 5px;
-}
 .social-icon {
     width: 30px;
     margin-left: 3px;
@@ -133,7 +131,7 @@ a {
     filter: brightness(90%);
 }
 .social-container {
-    margin: 2px 0 15px -4px;
+    margin: 5px 0 15px -5px;
 }
 .website {
     font-family: "PT Mono", monospace;
@@ -170,8 +168,5 @@ a {
     }
     .mapboxgl-popup-content {
       width: 80vw;
-    }
-    h1, h2, h3, h4 {
-      line-height: 1.0;
     }
 }
