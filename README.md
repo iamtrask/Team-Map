@@ -4,7 +4,7 @@ Check it out here - [MAP!](https://openmined.github.io/Team-Map/)
 
 If you would like to be included on this map, please complete the [New Contributors Survey](https://goo.gl/forms/86y61YQx6bIAI8TF3).
 
-If you would like any of your window's information to be changed, please submit an issue detailing said changes.
+If you would like any of your info window's information to be changed, please send a direct message via Slack to 4mber.
 
 ## How to Help
 
