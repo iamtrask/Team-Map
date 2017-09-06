@@ -11,7 +11,7 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('source-contribute', {
         type: 'vector',
-        url: 'mapbox://4mber.cj77uglqt1ih22qt525hsxki7-1664n'
+        url: 'mapbox://4mber.cj79202i81sjd31mj0w1kvgig-6b9bi'
     });
 });
 
@@ -86,7 +86,7 @@ map.on('click', function(e) {
     var myHTML = '<h1>' + feature.properties.Name + ' ' + feature.properties.Surname + '</h1><h3 class="location">';
     myHTML += feature.properties.Location + '</h3><h4 id="time"></h4><div class="social-container">';
     if (feature.properties.SlackID.length != 0) {
-        myHTML += '<a href="slack://user?team=OpenMined&id=' + feature.properties.SlackID + '"><img id="slack" src="icons/slack.svg" alt="Slack" class="social-icon"></a>';
+        myHTML += '<a href="slack://user?team=T6963A864&id=@' + feature.properties.SlackID + '"><img id="slack" src="icons/slack.svg" alt="Slack" class="social-icon"></a>';
     }
     if (feature.properties.Twitter.length != 0) {
         myHTML += '<a href="https://twitter.com/' + feature.properties.Twitter + '" target="_blank"><img id="twitter" src="icons/twitter.svg" alt="Twitter" class="social-icon"></a>';

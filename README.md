@@ -8,6 +8,6 @@ If you would like any of your info window's information to be changed, please se
 
 ## How to Help
 
-There are a number of ways this map can be improved upon, and as always, it is a work in progress. If you would like to help make it better, please check out the existing issues (or submit any of your own) and submit a pull request that reference any issues that it may resolve.
+There are a number of ways this map can be improved upon, and as always, it is a work in progress. If you would like to help make it better, please check out the existing issues (or submit any of your own) and submit a pull request that references any issues that it may resolve.
 
 #### This map is based on the MapBox API, and also incorporates the Google Timezone and GitHub APIs.
