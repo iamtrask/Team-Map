@@ -11,7 +11,7 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('source-contribute', {
         type: 'vector',
-        url: 'mapbox://4mber.cj8eu8exx120432mn7bng22yv-1926c'
+        url: 'mapbox://4mber.cj8jv8vt005812wldi0gjiu6m-37rqs'
     });
 });
 
