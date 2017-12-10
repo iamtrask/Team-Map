@@ -11,12 +11,12 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('source-contribute', {
         type: 'vector',
-        url: 'mapbox://4mber.cjak3ie2g3dz437qmkia51cpd-8oepp'
+        url: 'mapbox://4mber.cjb14zoye84vq32p7d9fi33uk-99p4n'
     });
 });
 
 // Creates repo buttons to sort layers:
-var toggleableLayerIds = ['Adapters', 'Capsule', 'Docs', 'mine.js', 'openmined.org', 'PyAono', 'PyBV', 'PySonar', 'PySyft', 'PyYashe', 'radar.js', 'Sonar', 'Team-Map', 'CampX', 'syft-translator.js', 'tutorials', 'OpenMined', 'mine-ui', 'Other Contributions'];
+var toggleableLayerIds = ['Adapters', 'Docs', 'openmined.org', 'PySonar', 'PySyft', 'Sonar', 'Team-Map', 'CampX', 'tutorials', 'OpenMined', 'mine-ui', 'Other Contributions'];
 var id = '';
 var link = '';
 
@@ -75,7 +75,7 @@ layers.appendChild(allLink);
 // Creates all markers & pop up windows, including all functionality:
 map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
-        layers: ['Other Contributions', 'Adapters', 'Capsule', 'Docs', 'PySonar', 'PySyft', 'PyYashe', 'Sonar', 'Team-Map', 'mine.js', 'openmined.org', 'PyBV', 'PyAono', 'radar.js', 'CampX', 'syft-translator.js', 'tutorials', 'OpenMined', 'mine-ui']
+        layers: ['Other Contributions', 'Adapters', 'Docs', 'PySonar', 'PySyft', 'Sonar', 'Team-Map', 'openmined.org', 'CampX', 'tutorials', 'OpenMined', 'mine-ui']
     });
     if (!features.length) {
         return;
@@ -139,7 +139,7 @@ map.on('click', function(e) {
     if (feature.properties.GitHub.length != 0) {
         var githubID = feature.properties.GitHub;
         var contributions = [];
-        var repos = ['PySyft', 'PySonar', 'PyAono', 'Capsule', 'openmined.org', 'Docs', 'Sonar', 'Adapters', 'mine.js', 'PyYashe', 'Team-Map', 'PyBV', 'radar.js', 'CampX', 'syft-translator.js', 'tutorials', 'OpenMined', 'mine-ui'];
+        var repos = ['PySyft', 'PySonar', 'openmined.org', 'Docs', 'Sonar', 'Adapters', 'Team-Map', 'CampX', 'tutorials', 'OpenMined', 'mine-ui'];
         repos.forEach(function(repo) {
             var githubcall = 'https://api.github.com/repos/OpenMined/' + repo + '/contributors?client_id=ac576b085ce24d8ce500&client_secret=00110f8b95ee6bac4abd27a36d58d804695a2a19';
             var git = new XMLHttpRequest();
