@@ -11,12 +11,12 @@ var map = new mapboxgl.Map({
 map.on('load', function() {
     map.addSource('source-contribute', {
         type: 'vector',
-        url: 'mapbox://4mber.cjcdgqrj4112t33pekwp1pca3-18i6e'
+        url: 'mapbox://4mber.cjdes7b3m0dhu2ql681zqioix-16o45'
     });
 });
 
 // Creates repo buttons to sort layers:
-var toggleableLayerIds = ['Adapters', 'Docs', 'PySonar', 'PySyft', 'Sonar', 'Team-Map', 'CampX', 'tutorials', 'OpenMined', 'mine-ui', 'openmined-website', 'openmined-ui', 'ml-agents', 'syft.js', 'Other Contributions'];
+var toggleableLayerIds = ['Adapters', 'CampX', 'Docs', 'Grid', 'mine-ui', 'ml-agents', 'OpenMined', 'openmined-website', 'openmined-ui', 'PySonar', 'PySyft', 'Sonar', 'syft.js', 'Team-Map', 'tutorials', 'Other Contributions'];
 var id = '';
 var link = '';
 
@@ -75,7 +75,7 @@ layers.appendChild(allLink);
 // Creates all markers & pop up windows, including all functionality:
 map.on('click', function(e) {
     var features = map.queryRenderedFeatures(e.point, {
-        layers: ['Other Contributions', 'Adapters', 'Docs', 'PySonar', 'PySyft', 'Sonar', 'Team-Map', 'CampX', 'tutorials', 'OpenMined', 'mine-ui', 'openmined-website', 'openmined-ui', 'ml-agents', 'syft.js']
+        layers: ['Other Contributions', 'Adapters', 'CampX', 'Docs', 'Grid', 'mine-ui', 'ml-agents', 'OpenMined', 'openmined-website', 'openmined-ui', 'PySonar', 'PySyft', 'Sonar', 'syft.js', 'Team-Map', 'tutorials']
     });
     if (!features.length) {
         return;
@@ -139,7 +139,7 @@ map.on('click', function(e) {
     if (feature.properties.GitHub.length != 0) {
         var githubID = feature.properties.GitHub;
         var contributions = [];
-        var repos = ['PySyft', 'PySonar', 'Docs', 'Sonar', 'Adapters', 'Team-Map', 'CampX', 'tutorials', 'OpenMined', 'mine-ui', 'openmined-website', 'openmined-ui', 'ml-agents', 'syft.js'];
+        var repos = ['Adapters', 'CampX', 'Docs', 'Grid', 'mine-ui', 'ml-agents', 'OpenMined', 'openmined-website', 'openmined-ui', 'PySonar', 'PySyft', 'Sonar', 'syft.js', 'Team-Map', 'tutorials'];
         repos.forEach(function(repo) {
             var githubcall = 'https://api.github.com/repos/OpenMined/' + repo + '/contributors?client_id=ac576b085ce24d8ce500&client_secret=00110f8b95ee6bac4abd27a36d58d804695a2a19';
             var git = new XMLHttpRequest();
